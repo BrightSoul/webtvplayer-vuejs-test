@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://api.civicam.it/test/v1/embed/webtvplayer.js?apiKey=c1b73933-618f-43bc-88f3-29f449fe3dcd"></script>
+    <title>Skin demo</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./Skin.umd.js"></script>
+    <link rel="stylesheet" href="./Skin.css">
+  </head>
+  <body>
+    <div id="player-container" style="width: 640px; height: 360px;"></div>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <script>
+        const playerContainer = document.getElementById('player-container');
+        const playerOptions = { skin: window.Skin, segment: 1.0 };
+        const videoId = 1;
+        /* eslint-disable no-undef */
+        WebTvPlayer.withCredentials = false;
+        new WebTvPlayer(playerContainer, videoId, playerOptions);
+    </script>
+  </body>
+</html>
