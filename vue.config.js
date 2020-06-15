@@ -4,4 +4,6 @@ module.exports = {
       libraryExport: 'default',
     },
   },
+  publicPath:
+    process.env.NODE_ENV === 'production' ? '/webtvplayer-vuejs-test/' : '/',
 };

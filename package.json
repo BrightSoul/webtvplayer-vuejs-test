@@ -1,11 +1,13 @@
 {
-  "name": "helloworld",
+  "name": "webtvplayer-vuejs-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://redturtle.github.io/webtvplayer-vuejs-test",
   "scripts": {
     "serve": "vue-cli-service serve --port 3000",
     "build": "vue-cli-service build --target lib --name Skin src/models/skin.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "gh-pages": "vue-cli-service build && gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -21,6 +23,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^3.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
