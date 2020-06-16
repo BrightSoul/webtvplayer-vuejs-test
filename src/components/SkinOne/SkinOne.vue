@@ -22,23 +22,5 @@
 <script src="./SkinOne.js"></script>
 
 <style scoped lang="scss">
-.container {
-  padding: 2px;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 1;
-  top: 0;
-  .slider {
-    position: absolute;
-    bottom: 12px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-}
+@import 'SkinOne.scss';
 </style>
