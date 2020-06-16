@@ -11,6 +11,16 @@
   </head>
   <body>
     <div id="player-container" style="width: 640px; height: 360px;"></div>
+    <script>
+      window.onload = function() {
+        const playerContainer = document.getElementById('player-container');
+        const playerOptions = { skin: WebTvPlayer.Skin, segment: 1.0 };
+        const videoId = 1;
+        /* eslint-disable no-undef */
+        WebTvPlayer.withCredentials = false;
+        const webTvPlayer = new WebTvPlayer(playerContainer, videoId, playerOptions);
+      };
+    </script>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

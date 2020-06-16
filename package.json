@@ -5,7 +5,7 @@
   "homepage": "https://redturtle.github.io/webtvplayer-vuejs-test",
   "scripts": {
     "serve": "vue-cli-service serve --port 3000",
-    "build": "vue-cli-service build --target lib --name Skin src/models/skin.js",
+    "build": "vue-cli-service build --inline-vue --name Skin src/models/skin.js",
     "lint": "vue-cli-service lint",
     "gh-pages": "vue-cli-service build && gh-pages -d dist"
   },
